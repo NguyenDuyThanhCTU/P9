@@ -4,7 +4,7 @@ import Commit from "../Items/Commit";
 const Section4 = () => {
   const commitItems = [
     {
-      topic: "Sự tiện lợi",
+      topic: "Tiện lợi",
       items: [
         {
           title: "Just One Step To Open",
@@ -37,12 +37,70 @@ const Section4 = () => {
       ],
     },
     {
-      topic: "Sự an toàn",
-      items: [],
+      topic: "An toàn",
+      items: [
+        {
+          title: "Touchpad Randomizer",
+          content:
+            "Ngăn kẻ trộm tìm ra mật khẩu của bạn thông qua vân tay để lại bằng cách nhấn hai chữ số đó",
+          image:
+            "https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2Ftouchpads.jpg?alt=media&token=beb59e0c-cc8e-427f-83e6-36c735df409b",
+        },
+        {
+          title: "Anti-Theft Mode",
+          content:
+            "Khi bạn thiết lập chế độ này, âm thanh báo động sẽ phát ra khi kẻ trộm cố gắng thoát ra khỏi cửa.",
+          image:
+            "https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2Fantitheftmode.jpg?alt=media&token=83d2c313-7ad1-48e8-9e9b-2a376379f8f6",
+        },
+        {
+          title: "Double Authentication",
+          content:
+            "Tính năng bảo mật nâng cao này yêu cầu phải nhập mật khẩu và vân tay/thẻ để mở khóa cửa.",
+          image:
+            "https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2Fdouble-authentication.jpg?alt=media&token=225e29b8-3b6d-42be-932a-9baed7887899",
+        },
+        {
+          title: "Fire Warning",
+          content:
+            "Chế độ này được kích hoạt khi phát hiện nhiệt độ cao bất thường trong nhà bạn. Bằng âm thanh báo động, nó giúp bạn nhận biết nguy cơ hỏa hoạn và tự mở khóa giúp bạn sơ tán khỏi nhà.",
+          image:
+            "https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2Ffirealarm.jpg?alt=media&token=ab750c75-ca18-4075-a632-7183c6be8826",
+        },
+      ],
     },
     {
-      topic: "Các chức năng hữu ích khác",
-      items: [],
+      topic: "Chức năng khác",
+      items: [
+        {
+          title: "Volume Adjustment",
+          content:
+            "Điều chỉnh âm lượng của khóa theo ý thích cá nhân của bạn, có thể là để tránh làm phiền người khác vào ban đêm,...",
+          image:
+            "https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2Fvolumecontrol.jpg?alt=media&token=f0a4cb68-50ca-4eac-887f-c353c9583a21",
+        },
+        {
+          title: "9V Battery Backup",
+          content:
+            "Chỉ cần sử dụng pin 9V để cấp nguồn cho khóa từ bên ngoài trong trường hợp hết pin.",
+          image:
+            "https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2F9vemergency-battaery.jpg?alt=media&token=36b0f05d-c30b-4294-b629-2fb6ae40d59a",
+        },
+        {
+          title: "Low Battery Alert",
+          content:
+            "Báo pin yếu giúp bạn có nhiều thời gian và thuận tiện để thay pin, đảm bảo rằng khóa của bạn luôn luôn hoạt động.",
+          image:
+            "https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2Flowbatterywarning-signal.jpg?alt=media&token=ca4f1a48-c31d-4b6a-9594-a1c060e93ec3",
+        },
+        {
+          title: "Interface with Samsung Connect",
+          content:
+            "Khóa tương tác với điện thoại Samsung hoặc hệ thống tự động dễ dàng mở khóa cửa",
+          image:
+            "https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2FInterface-with-samsung-smart-connect.jpg?alt=media&token=f22f3a97-4bfb-4d2a-b4dc-57544c6de33d",
+        },
+      ],
     },
   ];
   return (

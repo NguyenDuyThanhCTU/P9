@@ -15,6 +15,7 @@ const Commit = ({ topic, Data }: any) => {
                 Image={item.image}
                 title={item.title}
                 content={item.content}
+                topic={topic}
               />
             </div>
           ))}
