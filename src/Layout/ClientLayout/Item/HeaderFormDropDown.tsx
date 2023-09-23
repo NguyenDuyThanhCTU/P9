@@ -8,7 +8,7 @@ const HeaderFormDropDown: React.FC = () => {
   const { productTypes } = useData();
   console.log(productTypes);
   return (
-    <div className="w-[1400px] h-max bg-white text-black font-Main">
+    <div className="w-[1400px] h-max bg-white text-black font-Main shadow-xl shadow-gray-200 ">
       <div className="grid grid-cols-4 ">
         {TypeProductItems.map((item: any, idx) => {
           const types = productTypes?.filter(
@@ -17,15 +17,19 @@ const HeaderFormDropDown: React.FC = () => {
           return (
             <div
               key={idx}
-              className="flex flex-col justify-start items-center border-r py-5 shadow-md shadow-blue-200 "
+              className="flex flex-col justify-start items-center border-r py-5 "
             >
               <Link to={`/danh-sach-san-pham/${item.value}`}>
                 <div className="">
                   <h1 className="text-center pb-2 text-mainblue font-bold ">
                     {item.label}
                   </h1>
-                  <div>
-                    <img src={item.image} alt="type-product" />
+                  <div className="w-full h-full overflow-hidden">
+                    <img
+                      src={item.image}
+                      alt="type-product"
+                      className="hover:scale-110 duration-300"
+                    />
                   </div>
                 </div>
               </Link>

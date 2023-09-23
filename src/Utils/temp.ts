@@ -1,54 +1,40 @@
 export {};
 
-export const Posts = [
+export const LazadaItems = [
   {
-    title: "QUI ĐỊNH HÌNH THỨC THANH TOÁN",
-    content: "Nội dung bài viết 1",
-    url: "qui-dinh-hinh-thuc-thanh-toan",
-    type: "policy",
-    image: "",
+    name: "Singapore",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2FLazalogo_2.png?alt=media&token=a9a6681c-dc75-436e-b1e4-9de6c1ddccf9",
+    url: " ",
   },
   {
-    title: "CHÍNH SÁCH BẢO HÀNH",
-    content: "Nội dung bài viết ",
-    url: "chinh-sach-bao-hanh",
-    type: "policy",
-    image: "",
+    name: "Singapore",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2FQoo10_2-1.png?alt=media&token=40cda810-c854-43ea-b56b-47400fc67509",
+    url: " ",
   },
   {
-    title: "CHÍNH SÁCH BẢO VỆ THÔNG TIN CÁ NHÂN",
-    content: "Nội dung bài viết ",
-    url: "chinh-sach-bao-ve-thong-tin-ca-nhan",
-    type: "policy",
-    image: "",
+    name: "Singapore",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2FSHOPEE-ICON.png?alt=media&token=d782f855-7725-4254-8c9a-70fd329f8d39",
+    url: " ",
   },
   {
-    title: "CHÍNH SÁCH ĐỔI TRẢ HÀNG",
-    content: "Nội dung bài viết ",
-    url: "chinh-sach-doi-tra-hang",
-    type: "policy",
-    image: "",
+    name: "Malaysia",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2FLazalogo_2.png?alt=media&token=a9a6681c-dc75-436e-b1e4-9de6c1ddccf9",
+    url: " ",
   },
   {
-    title: "CHÍNH SÁCH VẬN CHUYỂN",
-    content: "Nội dung bài viết ",
-    url: "chinh-sach-van-chuyen",
-    type: "policy",
-    image: "",
+    name: "Malaysia",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2FQoo10_2-1.png?alt=media&token=40cda810-c854-43ea-b56b-47400fc67509",
+    url: " ",
   },
   {
-    title: "",
-    content: "Nội dung bài viết ",
-    url: "",
-    type: "",
-    image: "",
-  },
-  {
-    title:
-      'YẾN SÀO TRÍ SƠN NHẬN GIẢI "SẢN PHẨM CÔNG NGHIỆP NÔNG THÔN TIÊU BIỂU CẤP TỈNH" NĂM 2023',
-    content: "Nội dung bài viết ",
-    url: "",
-    type: "news",
-    image: "",
+    name: "Malaysia",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2FSHOPEE-ICON.png?alt=media&token=d782f855-7725-4254-8c9a-70fd329f8d39",
+    url: " ",
   },
 ];

@@ -31,6 +31,7 @@ module.exports = {
         //Custom colors
         mainblue: "#2e4acd",
         mainred: "#d70000",
+        mainyellow: "#f1ce5d",
       },
 
       // custom

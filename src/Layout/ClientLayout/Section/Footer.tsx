@@ -1,7 +1,6 @@
 import React from "react";
 import { useData } from "../../../Context/DataProviders";
-import { Link } from "react-router-dom";
-import { Posts } from "../../../Utils/temp";
+
 import { IconMapping, SocialMediaCustom } from "../../../Utils/item";
 import { AiOutlineSearch } from "react-icons/ai";
 
