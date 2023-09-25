@@ -1,6 +1,9 @@
 import Admin from "../Components/Admin/Admin";
+import Contact from "../Components/Client/Contact/Contact";
 import Home from "../Components/Client/Home/Home";
+import Project from "../Components/Client/Project/Project";
 import Promotion from "../Components/Client/Promotion/Promotion";
+import Support from "../Components/Client/Support/Support";
 
 import PostDetail from "../Components/Item/PostDetail";
 import Login from "../Components/Login/Login";
@@ -26,6 +29,21 @@ export const AllRoutes = [
   {
     path: "/khuyen-mai",
     component: Promotion,
+    Layout: ClientLayout,
+  },
+  {
+    path: "/du-an",
+    component: Project,
+    Layout: ClientLayout,
+  },
+  {
+    path: "/ho-tro",
+    component: Support,
+    Layout: ClientLayout,
+  },
+  {
+    path: "/lien-he",
+    component: Contact,
     Layout: ClientLayout,
   },
   {

@@ -38,3 +38,26 @@ export const LazadaItems = [
     url: " ",
   },
 ];
+
+export const projectItems = [
+  {
+    image:
+      "https://www.samsungdigitallife.com/wp-content/uploads/2018/03/1.jpg",
+  },
+  {
+    image:
+      "https://www.samsungdigitallife.com/wp-content/uploads/2018/03/2.jpg",
+  },
+  {
+    image:
+      "https://www.samsungdigitallife.com/wp-content/uploads/2018/03/3.jpg",
+  },
+  {
+    image:
+      "https://www.samsungdigitallife.com/wp-content/uploads/2018/03/4.jpg",
+  },
+  {
+    image:
+      "https://www.samsungdigitallife.com/wp-content/uploads/2018/03/5.jpg",
+  },
+];
