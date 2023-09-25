@@ -19,7 +19,7 @@ const HeaderFormDropDown: React.FC = () => {
               key={idx}
               className="flex flex-col justify-start items-center border-r py-5 "
             >
-              <Link to={`/danh-sach-san-pham/${item.value}`}>
+              <Link to={`/${item.value}`}>
                 <div className="">
                   <h1 className="text-center pb-2 text-mainblue font-bold ">
                     {item.label}
@@ -37,7 +37,7 @@ const HeaderFormDropDown: React.FC = () => {
               <div className="flex w-full px-6 py-6">
                 <div className="">
                   {types?.map((data: any, idx: number) => (
-                    <Link to={`/danh-sach-san-pham/${data.typeUrl}`}>
+                    <Link to={`/${data.typeUrl}`}>
                       <div className="flex items-center gap-3 border-b py-1 font-light cursor-pointer hover:text-mainblue">
                         <div className="text-[20px]">
                           <BiSolidCaretRightCircle />

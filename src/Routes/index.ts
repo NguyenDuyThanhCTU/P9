@@ -1,6 +1,7 @@
 import Admin from "../Components/Admin/Admin";
 import Contact from "../Components/Client/Contact/Contact";
 import Home from "../Components/Client/Home/Home";
+import DigitalDoor from "../Components/Client/Products/DigitalDoor/DigitalDoor";
 import Project from "../Components/Client/Project/Project";
 import Promotion from "../Components/Client/Promotion/Promotion";
 import Support from "../Components/Client/Support/Support";
@@ -11,16 +12,16 @@ import AdminLayout from "../Layout/AdminLayout/AdminLayout";
 import ClientLayout from "../Layout/ClientLayout/ClientLayout";
 
 export const AllRoutes = [
-  {
-    path: "/login",
-    component: Login,
-    Layout: AdminLayout,
-  },
-  {
-    path: "/admin",
-    component: Admin,
-    Layout: AdminLayout,
-  },
+  // {
+  //   path: "/login",
+  //   component: Login,
+  //   Layout: AdminLayout,
+  // },
+  // {
+  //   path: "/admin",
+  //   component: Admin,
+  //   Layout: AdminLayout,
+  // },
   {
     path: "/",
     component: Home,
@@ -44,6 +45,11 @@ export const AllRoutes = [
   {
     path: "/lien-he",
     component: Contact,
+    Layout: ClientLayout,
+  },
+  {
+    path: "/khoa-cua-dien-tu",
+    component: DigitalDoor,
     Layout: ClientLayout,
   },
   {

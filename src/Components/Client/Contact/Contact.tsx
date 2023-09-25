@@ -1,6 +1,64 @@
-import React from "react";
+import React, { useState } from "react";
+import ContactCard from "./Items/ContactCard";
+import { useData } from "../../../Context/DataProviders";
+import { notification } from "antd";
+import Input from "../../Admin/Item/Input";
+import { CiLocationOn } from "react-icons/ci";
+import { AiOutlineMail, AiTwotonePhone } from "react-icons/ai";
+import { FaFax } from "react-icons/fa";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [address, setAddress] = useState("");
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  const { ContactData } = useData();
+
+  const HandleSubmit = async (e: any) => {
+    e.preventDefault();
+    if (!phone || !name || !email || !title || !description) {
+      notification["warning"]({
+        message: "Thao tác KHÔNG thành công !",
+        description: `
+           Vui lòng nhập đầy đủ THÔNG TIN !`,
+      });
+    } else {
+      let data = {
+        HọTên: name,
+        Email: email,
+        SĐT: phone,
+        ĐC: address,
+        NộiDung: description,
+      };
+      const response = await fetch(
+        "https://formsubmit.co/ajax/thanhnd2512@gmail.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+
+      if (response.ok) {
+        notification["success"]({
+          message: "Thành công !",
+          description: `
+             Chúng tôi sẽ liên hệ trong thời gian sớm nhất !`,
+        });
+      } else {
+        notification["error"]({
+          message: "Lỗi !",
+          description: `
+             Lỗi không xác định !`,
+        });
+      }
+    }
+  };
   return (
     <div>
       <div className="bg-[#eaeefc] ">
@@ -30,6 +88,230 @@ const Contact = () => {
               Trò chuyện với chúng tôi trên Whatsapp (hoặc) <br />
               Hãy gọi cho chúng tôi trong trường hợp khẩn cấp.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[url(https://www.samsungdigitallife.com/wp-content/uploads/2021/10/contact-us-banner_bg-scaled.jpg)] h-max bg-no-repeat bg-cover">
+        <div className="w-[1200px] mx-auto flex  gap-5 py-10 items-start">
+          <div className=" flex-[60%] g bg-[rgba(255,255,255,0.46)] rounded-3xl h-full">
+            <div className="p-5 grid grid-cols-2 gap-5 h-full">
+              <div className=" bg-purple-900 text-white font-bold text-[30px] py-2 rounded-2xl col-span-2">
+                <h2 className="text-center">Thắc mắc chung</h2>
+              </div>
+
+              <div className="bg-white flex flex-col items-center gap-5 py-4">
+                <div className="w-[60%]">
+                  <img
+                    src="https://www.samsungdigitallife.com/wp-content/uploads/2021/11/customer-service2.png"
+                    alt="contact"
+                    className="w-full"
+                  />
+                </div>
+                <h3 className="text-[24px] font-semibold">HỖ TRỢ BÁN HÀNG</h3>
+                <div className="flex ">
+                  <div className="py-3 bg-purple-950 text-white font-semibold px-6 rounded-full uppercase">
+                    Liên hệ
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white flex flex-col items-center gap-5 py-4">
+                <div className="w-[60%]">
+                  <img
+                    src="https://www.samsungdigitallife.com/wp-content/uploads/2021/11/customer-service2.png"
+                    alt="contact"
+                    className="w-full"
+                  />
+                </div>
+                <h3 className="text-[24px] font-semibold">HỖ TRỢ KỸ THUẬT</h3>
+                <div className="flex ">
+                  <div className="py-3 bg-purple-950 text-white font-semibold px-6 rounded-full uppercase">
+                    Liên hệ
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex-[40%] bg-[rgba(255,255,255,0.46)] rounded-3xl">
+            <div className="p-5 flex flex-col gap-7">
+              <div className=" bg-purple-900 text-white font-bold text-[30px] py-2 rounded-2xl">
+                <h2 className="text-center">HỖ TRỢ KHẨN CẤP</h2>
+              </div>
+              <div className="bg-white flex flex-col items-center gap-5 py-4">
+                <div className="w-[60%]">
+                  <img
+                    src="https://www.samsungdigitallife.com/wp-content/uploads/2021/11/customer-service2.png"
+                    alt="contact"
+                    className="w-full"
+                  />
+                </div>
+                <h3 className="text-[24px] font-semibold">CALL US NOW</h3>
+                <div className="flex ">
+                  <div className="py-3 bg-purple-950 text-white font-semibold px-6 rounded-full ">
+                    +65 6564 4704
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <iframe
+          src={ContactData.location}
+          className="w-screen h-[50vh]"
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <div className="bg-[url(https://samsungdigitallife.com/wp-content/uploads/2018/02/contactusbackground-1.jpg)] bg-no-repeat bg-cover h-max bg-center py-10 ">
+        <div className="grid grid-cols-2 w-[1200px] mx-auto py-10">
+          <div className="bg-[url(https://samsungdigitallife.com/wp-content/uploads/2018/02/contactusbg2.jpg)] flex flex-col items-center p-10 gap-10 ">
+            <div>
+              <img
+                src="https://samsungdigitallife.com/wp-content/uploads/2018/02/singaicon.png"
+                alt="logo"
+              />
+            </div>
+            <div className="text-[26px] font-bold text-center text-white">
+              <h3>HANMAN INTERNATIONAL PTE LTD SINGAPORE</h3>
+            </div>
+            <div className="flex flex-col gap-5 text-[22px] text-white">
+              <div className="flex items-center gap-5 ">
+                <div className="bg-slate-300 text-mainbluerounded-full text-[50px] p-2 rounded-full text-mainblue">
+                  <CiLocationOn />
+                </div>
+                <p>
+                  2 Jurong East Street 21, IMM Building, #03-157, Singapore
+                  609601
+                </p>
+              </div>
+              <div className="flex items-center gap-5 ">
+                <div className="bg-slate-300 text-mainbluerounded-full text-[50px] p-2 rounded-full text-mainblue">
+                  <AiTwotonePhone />
+                </div>
+                <p>+65-6564 4704</p>
+              </div>
+              <div className="flex items-center gap-5 ">
+                <div className="bg-slate-300 text-mainbluerounded-full text-[50px] p-2 rounded-full text-mainblue">
+                  <FaFax className="p-2" />
+                </div>
+                <p>+65-6258 3080</p>
+              </div>
+              <div className="flex items-center gap-5 ">
+                <div className="bg-slate-300 text-mainbluerounded-full text-[50px] p-2 rounded-full text-mainblue">
+                  <AiOutlineMail className="p-2" />
+                </div>
+                <p>SamsungSG@hanman.net</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white ">
+            <form
+              onSubmit={HandleSubmit}
+              className="flex flex-col gap-3 mb-5 p-10 w-full h-full shadow-xl"
+            >
+              <Input
+                text="Họ Tên(*)"
+                Value={name}
+                setValue={setName}
+                Input={true}
+              />
+              <Input
+                text="Email"
+                Value={email}
+                setValue={setEmail}
+                Input={true}
+              />
+              <Input
+                text="Điện thoại(*)"
+                Value={phone}
+                setValue={setPhone}
+                Input={true}
+              />
+              <Input
+                text="Địa chỉ(*)"
+                Value={address}
+                setValue={setAddress}
+                Input={true}
+              />
+              <Input
+                text="Chủ đề"
+                Value={title}
+                setValue={setTitle}
+                Input={true}
+              />
+              <Input
+                text="Nội dung(*)"
+                Value={description}
+                setValue={setDescription}
+                Input={false}
+              />
+              <div className=" ">
+                <button
+                  type="submit"
+                  className="uppercase py-2 px-6 bg-maincontent rounded-full text-white cursor-pointer hover:bg-main bg-green-500 hover:bg-green-600"
+                >
+                  gửi đi
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-[1200px] flex mx-auto gap-10 items-center py-10 justify-center">
+        <div className="mx-16">
+          <img
+            src="https://samsungdigitallife.com/wp-content/uploads/2018/02/businesshours.png"
+            alt="work-time"
+          />
+        </div>
+        <div className="text-[24px] flex flex-col gap-5">
+          <h2>Giờ làm việc của chúng tôi:</h2>
+          <h2 className="font-semibold">
+            Monday to Saturday (9.00am to 6.00pm)
+          </h2>
+          <p className="italic text-[18px] text-gray-600">
+            (Closed on Sunday and Public Holiday)
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-[#ffd5d7] ">
+        <div className="w-[1200px] mx-auto flex py-10">
+          <div className="w-[100%] flex-1">
+            <img
+              src="https://www.samsungdigitallife.com/wp-content/uploads/2018/02/outofservicefin-600x406.png"
+              alt="not support"
+              className="w-full"
+            />
+          </div>
+          <div className="flex-1">
+            <h2 className="font-bold text-[30px] py-5 text-red-500">
+              NO SUPPORT
+            </h2>
+            <div className="flex flex-col gap-4 text-[22px] font-light">
+              <p>
+                We provide technical support for only Singapore and Malaysia
+                customers purchasing SAMSUNG Digital Door Lock from us or our
+                authorized dealers.
+              </p>
+              <p>
+                If you are not our customer and need technical support, please
+                call where you purchased from or your country authorized
+                distributor. Sorry we are not obligated to render any
+                assistance.
+              </p>
+            </div>
+            <div className="flex mt-10">
+              <div className="bg-red-400 py-2 px-6 rounded-full uppercase text-red-800 border-red-800 border font-semibold">
+                Find why?
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -325,8 +325,8 @@ export const TypePostItems = [
 
 export const TypeProductItems = [
   {
-    label: "Cửa khóa điện tử",
-    value: "cua-khoa-dien-tu",
+    label: "Khóa cửa điện tử",
+    value: "khoa-cua-dien-tu",
     image:
       "https://www.samsungdigitallife.com/wp-content/uploads/2018/02/digitaldoorlockimg.jpg",
   },
