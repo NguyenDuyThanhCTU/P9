@@ -20,8 +20,8 @@ import { convertToCodeFormat } from "../../../Item/Handle";
 const AddType: React.FC = () => {
   const [Name, setName] = useState<string>("");
   const [Params, setIsParams] = useState<string>("");
-  const [Parent, setParent] = useState<string>("Cửa Khóa Điện Tử");
-  const [ParentParams, setParentParams] = useState<string>("cua-khoa-dien-tu");
+  const [Parent, setParent] = useState<string>("Khóa Cửa Điện Tử");
+  const [ParentParams, setParentParams] = useState<string>("khoa-cua-dien-tu");
 
   const [isSelected, setSelected] = useState<number | undefined>();
   const { setIsRefetch, setDropDown } = useStateProvider();

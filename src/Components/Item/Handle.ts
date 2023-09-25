@@ -35,6 +35,10 @@ export const convertToCodeFormat = (text: string) => {
   return textWithoutDiacritics.replace(/\s+/g, "-").toLowerCase();
 };
 
+export const convertArrayToCodeFormat = (array: string[]) => {
+  return array.map((text) => convertToCodeFormat(text));
+};
+
 //convert from list id of product to list product
 export const convertListIdToProduct = (
   listId: string[],

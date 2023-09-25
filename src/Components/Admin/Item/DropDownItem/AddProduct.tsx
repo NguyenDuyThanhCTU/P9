@@ -12,7 +12,11 @@ import Input from "../Input";
 import { useStateProvider } from "../../../../Context/StateProvider";
 import { useData } from "../../../../Context/DataProviders";
 import { TypeProductItems } from "../../../../Utils/item";
-import { convertToCodeFormat, uploadImage } from "../../../Item/Handle";
+import {
+  convertArrayToCodeFormat,
+  convertToCodeFormat,
+  uploadImage,
+} from "../../../Item/Handle";
 import { addDocument } from "../../../../Config/Services/Firebase/FireStoreDB";
 
 import { title } from "process";
@@ -22,15 +26,12 @@ const AddProduct = ({}) => {
   const [imageUrl, setImageUrl] = useState<string | undefined>();
   const [Title, setTitle] = useState<any>();
   const [titleUrl, setTitleUrl] = useState<string | undefined>();
-  const [Price, setPrice] = useState<string | undefined>();
   const [Content, setContent] = useState<string | undefined>();
   const [describe, setDescribe] = useState("");
-  const [isType, setIsType] = useState<any>();
-  const [isParent, setIsParent] = useState("Cửa Khóa Điện Tử");
-  const [isChildren, setIsChildren] = useState<any>();
-  const [typeUrl, setTypeUrl] = useState<string | undefined>();
+  const [isType, setIsType] = useState<any>([]);
+  const [isParent, setIsParent] = useState("Khóa Cửa Điện Tử");
+  const [typeUrl, setTypeUrl] = useState<any>([]);
   const [parentUrl, setParentUrl] = useState<string | undefined>();
-  const [childrenUrl, setChildrenUrl] = useState<string | undefined>();
   const [ListSubImage, setListSubImage] = useState<any>([]);
   const { setDropDown, setIsRefetch } = useStateProvider();
   const { productTypes } = useData();
@@ -42,41 +43,29 @@ const AddProduct = ({}) => {
     "<p>Chất liệu: </p> <br/> <p>Màu sắc: </p> <br/> <p>Size: </p> <br/> <p>Chiều dài: </p> <br/> <p>Chiều rộng: </p> <br/> <p>Chiều cao: </p> <br/> <p>Trọng lượng: </p> <br/> <p>Thương hiệu: </p> <br/> <p>Xuất xứ: </p> <br/> <p>Chất liệu";
   const initDescribe = "<p> mô tả sản phẩm </p>";
 
-  //convert to url,ex: "Hộp quà - giỏ quà" => "hop-qua-gio-qua"
   useEffect(() => {
     const handleChange = () => {
-      const formattedType = convertToCodeFormat(isType);
       const formattedParent = convertToCodeFormat(isParent);
-      const formattedChildren = convertToCodeFormat(isChildren);
       const formattedTitle = convertToCodeFormat(Title);
-      if (formattedType) {
-        setTypeUrl(formattedType);
-      }
+
       if (formattedParent) {
         setParentUrl(formattedParent);
       }
-      if (formattedChildren) {
-        setChildrenUrl(formattedChildren);
-      }
+
       if (formattedTitle) {
         setTitleUrl(formattedTitle);
       }
     };
     handleChange();
-  }, [isType, isParent, isChildren, Title]);
+  }, [isType, isParent, Title]);
 
   const handleDiscard = () => {
     setTitle("");
     setTitleUrl("");
-    setPrice("");
+
     setContent("");
     setDescribe("");
-    setIsType("");
-    setIsParent("");
-    setIsChildren("");
-    setTypeUrl("");
-    setParentUrl("");
-    setChildrenUrl("");
+
     setListSubImage([]);
     setImageUrl("");
   };
@@ -92,7 +81,7 @@ const AddProduct = ({}) => {
         title: Title,
         content: Content,
         describe: describe,
-        price: Price,
+
         image: imageUrl,
         type: isType,
         typeUrl: typeUrl,
@@ -100,14 +89,9 @@ const AddProduct = ({}) => {
         parentUrl: parentUrl,
         state: "Còn hàng",
         url: titleUrl,
-        sale: {
-          discount: 0,
-          newPrice: "0",
-        },
+
         access: Math.floor(Math.random() * (10000 - 100 + 1)) + 100,
         subimage: ListSubImage,
-        children: isChildren,
-        childrenUrl: childrenUrl,
       };
 
       for (let key in data) {
@@ -147,6 +131,18 @@ const AddProduct = ({}) => {
       );
     }
   };
+
+  const handleChange = (value: string) => {
+    setIsType(value);
+  };
+
+  useEffect(() => {
+    let newValue: any = [];
+    if (isType.length > 0) {
+      newValue = convertArrayToCodeFormat(isType);
+      setTypeUrl(newValue);
+    }
+  }, [isType]);
 
   return (
     <div
@@ -204,12 +200,7 @@ const AddProduct = ({}) => {
                       Value={Title}
                       setValue={setTitle}
                     />
-                    <Input
-                      text="Giá sản phẩm"
-                      Value={Price}
-                      setValue={setPrice}
-                      Input={true}
-                    />
+
                     <div className="">
                       <label>Thông tin sản phẩm</label>
                       <div
@@ -230,7 +221,7 @@ const AddProduct = ({}) => {
                     </div>
                   </div>
                   <div className="  flex flex-col gap-3">
-                    <div className="flex gap-2 w-full">
+                    <div className=" w-full">
                       <div className="flex flex-col gap-2">
                         <label className="text-md font-medium ">
                           Mục bài viết:
@@ -250,50 +241,25 @@ const AddProduct = ({}) => {
                           ))}
                         </select>
                       </div>
-                      <div className="flex flex-col gap-2 w-[190px]">
-                        <label className="text-md font-medium ">
-                          Loại bài viết
-                        </label>
-                        <Select
-                          style={{ width: "100%" }}
-                          placeholder="Chọn loại bài viết"
-                          onChange={setIsType}
-                          optionLabelProp="label"
-                        >
-                          {productTypes
-                            ?.filter((item: any) => item.parent === isParent)
-                            .map((item: any, idx: any) => (
-                              <Option value={item.type} label={item.type}>
-                                <Space>{item.type}</Space>
-                              </Option>
-                            ))}
-                        </Select>
-                      </div>
                     </div>
+
                     <div className="flex flex-col gap-2 w-full">
                       <label className="text-md font-medium ">
                         Loại bài viết
                       </label>
-
                       <Select
+                        mode="tags"
                         style={{ width: "100%" }}
                         placeholder="Chọn loại bài viết"
-                        onChange={setIsChildren}
+                        onChange={handleChange}
                         optionLabelProp="label"
                       >
                         {productTypes
-                          ?.filter((item: any) => item.type === isType)
+                          ?.filter((item: any) => item.parentUrl === parentUrl)
                           .map((item: any, idx: any) => (
-                            <>
-                              {item.children.map((items: any, idx: number) => (
-                                <Option
-                                  value={items.children}
-                                  label={items.children}
-                                >
-                                  <Space>{items.children}</Space>
-                                </Option>
-                              ))}
-                            </>
+                            <Option value={item.type} label={item.type}>
+                              <Space>{item.type}</Space>
+                            </Option>
                           ))}
                       </Select>
                     </div>

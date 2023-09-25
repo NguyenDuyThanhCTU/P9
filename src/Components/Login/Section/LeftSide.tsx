@@ -29,7 +29,6 @@ export const LeftSide: React.FC<ChangePasswordProps> = ({
 
   const { setVerify } = useAuth();
   const { setHeaderAdmin, Accounts } = useData();
-  console.log(Accounts);
   const HandleChangePass = () => {
     if (Accounts.username === Username) {
       setIsChangePasswords(true);

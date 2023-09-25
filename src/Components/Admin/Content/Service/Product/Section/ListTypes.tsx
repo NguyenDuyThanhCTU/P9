@@ -18,7 +18,7 @@ const ListType: React.FC = () => {
             <div className="p-2">
               {TypeProductItems.map((items, idx) => {
                 const children = productTypes.filter(
-                  (data: any) => data.parent === items.label
+                  (data: any) => data.parentUrl === items.value
                 );
 
                 return (

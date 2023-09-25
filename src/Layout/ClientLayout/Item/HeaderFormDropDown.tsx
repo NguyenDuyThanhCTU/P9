@@ -6,13 +6,12 @@ import { Link } from "react-router-dom";
 
 const HeaderFormDropDown: React.FC = () => {
   const { productTypes } = useData();
-  console.log(productTypes);
   return (
     <div className="w-[1400px] h-max bg-white text-black font-Main shadow-xl shadow-gray-200 ">
       <div className="grid grid-cols-4 ">
         {TypeProductItems.map((item: any, idx) => {
           const types = productTypes?.filter(
-            (data: any) => data.parent === item.label
+            (data: any) => data.parentUrl === item.value
           );
           return (
             <div
