@@ -26,8 +26,8 @@ export const Section1: React.FC = () => {
   ];
   return (
     <div className="bg-[#5900ce]">
-      <div className="w-[1300px] mx-auto flex flex-col py-10">
-        <h3 className="text-[34px] text-[#00d8ff] font-bold  text-center ">
+      <div className="p:w-auto d:w-[1300px] mx-auto flex flex-col py-10">
+        <h3 className="p:text-[24px] d:text-[34px] text-[#00d8ff] font-bold  text-center ">
           TÍNH NĂNG CHÍNH CỦA KHÓA CỬA ĐIỆN TỬ SỐ SAMSUNG
         </h3>
         <div className="mt-3">

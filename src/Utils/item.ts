@@ -255,7 +255,7 @@ export const HeaderItems = [
 
   {
     name: "Sản phẩm",
-    link: "san-pham",
+    link: "khoa-cua-dien-tu",
   },
   {
     name: "Khuyến mãi",

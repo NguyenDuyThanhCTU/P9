@@ -6,7 +6,7 @@ import { useData } from "../../../../Context/DataProviders";
 
 const DigitalDoor: React.FC = () => {
   const { Products, productTypes } = useData();
-
+  console.log(productTypes);
   return (
     <>
       {/* Introduce section */}

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.66579d0a.css",
+    "main.js": "/static/js/main.da40aa43.js",
+    "static/media/tahoma.ttf": "/static/media/tahoma.eeb96a185da92c71e257.ttf",
+    "static/media/UTM American Sans.ttf": "/static/media/UTM American Sans.1a5921b29c8fc2d87a21.ttf",
+    "index.html": "/index.html",
+    "main.66579d0a.css.map": "/static/css/main.66579d0a.css.map",
+    "main.da40aa43.js.map": "/static/js/main.da40aa43.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66579d0a.css",
+    "static/js/main.da40aa43.js"
+  ]
+}

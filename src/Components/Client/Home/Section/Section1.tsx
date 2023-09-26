@@ -4,14 +4,12 @@ const Section1 = () => {
   return (
     <>
       <div className="bg-[url(https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2FOnline-warranty_home_banner_bg2-scaled.jpg?alt=media&token=aa727913-6030-42b3-909f-b11414c9aecc)]  h-screen bg-cover bg-right ">
-        <div className="flex items-center h-full">
-          <div className="bg-[rgba(255,255,255,0.46)] max-w-[40%] rounded-3xl ml-32">
-            <div className="font-Main text-mainred  flex flex-col gap-5 p-[60px] ">
-              <h1 className=" text-[50px] font-bold">
-                ĐĂNG KÝ BẢO HÀNH ĐIỆN TỬ
-              </h1>
+        <div className="flex p:items-end d:items-center h-full">
+          <div className="p:bg-[rgba(255,255,255,0.66)] d:bg-[rgba(255,255,255,0.46)] p:max-w-full d:max-w-[40%] rounded-3xl p:ml-auto d:ml-32">
+            <div className="font-Main text-mainred  flex flex-col gap-5 p:p-2 d:p-[60px] ">
+              <h1 className=" text-[50px] font-bold">ĐĂNG KÝ BẢO HÀNH</h1>
               <p className="text-[#383838] text-[18px] font-thin ">
-                Cảm ơn quý khách đã ủng hộ sản phẩm Khóa Cửa Kỹ Thuật Số của
+                Cảm ơn quý khách đã ủng hộ sản phẩm Khóa Cửa Điện Tử của
                 Samsung. Vui lòng đăng ký bảo hành sản phẩm Digital Lock và điền
                 thông tin chi tiết của bạn để hoàn tất đăng ký Bảo hành điện tử
                 trong vòng 14 ngày kể từ ngày cài đặt để được hưởng phạm vi bảo
@@ -35,7 +33,7 @@ const Section1 = () => {
       </div>
 
       <div className="bg-[url(https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2Finstagram-backgrond-opti-scaled.jpg?alt=media&token=17816852-b4a6-4e41-bbad-736c0d3e8da9)] bg-no-repeat bg-cover min-h-screen flex items-center">
-        <div className="w-[1400px] mx-auto">
+        <div className=" p:w-auto d:w-[1400px] mx-auto">
           <div className="flex justify-center items-start gap-8">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2Finsta_button_text3.png?alt=media&token=eff4354f-2ac3-4ba3-af45-241890c6b28e"
@@ -64,16 +62,16 @@ const Section1 = () => {
       </div>
 
       <div className="bg-[url(https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2Fbgblueforhom3-scaled.jpg?alt=media&token=3fe75dca-9bb3-4f4b-b75e-22d31e4c76e5)] h-screen bg-cover bg-center bg-no-repeat font-Main">
-        <div className=" w-[1250px] mx-auto ">
-          <div className="flex justify-start items-center gap-10 ">
-            <div className="max-w-[450px] max-h-[675px]">
+        <div className="p:w-auto d:w-[1250px] mx-auto ">
+          <div className="flex justify-start items-center gap-10 d:flex-row p:flex-col">
+            <div className="p:max-w-[50%] d:max-w-[450px] max-h-[675px]">
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2Fauthorised-store-medal3-e1602155074159-600x899.png?alt=media&token=41497896-d939-420c-b2eb-5b41cfafa237"
                 alt=""
                 className="w-full"
               />
             </div>
-            <div className="flex flex-col gap-5 mt-10">
+            <div className="flex flex-col gap-5 mt-10 p-2">
               <h1 className="text-mainyellow text-[60px] leading-[85px] font-bold">
                 Samsung Smart Lock
               </h1>

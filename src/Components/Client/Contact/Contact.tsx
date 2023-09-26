@@ -62,18 +62,18 @@ const Contact = () => {
   return (
     <div>
       <div className="bg-[#eaeefc] ">
-        <div className="w-[1200px] mx-auto flex flex-col gap-5 py-10 items-center">
+        <div className="p:w-auto d:w-[1200px] mx-auto flex flex-col gap-5 py-10 items-center text-center">
           <h1 className="text-mainblue text-[42px] uppercase font-bold ">
             Kết nối với chúng tôi{" "}
           </h1>
           <h3 className="text-[20px] font-light">
-            WE’D LOVE TO HEAR FROM YOU SO DO GET IN TOUCH IF YOU HAVE ANY
-            QUESTIONS OR FEEDBACK.
+            CHÚNG TÔI MUỐN ĐƯỢC NGHE TỪ BẠN VÌ VẬY HÃY LIÊN HỆ NẾU BẠN CÓ BẤT KỲ
+            CÂU HỎI HOẶC PHẢN HỒI NÀO.
           </h3>
         </div>
       </div>
       <div className="bg-blue-900 ">
-        <div className="w-[1200px] mx-auto flex  gap-5 py-10 items-center">
+        <div className="d:flex-row p:flex-col p:w-auto d:w-[1200px] mx-auto flex  gap-5 py-10 items-center">
           <div>
             <img
               src="https://www.samsungdigitallife.com/wp-content/uploads/2021/10/Chat-ICon-600x372.png"
@@ -93,7 +93,7 @@ const Contact = () => {
       </div>
 
       <div className="bg-[url(https://www.samsungdigitallife.com/wp-content/uploads/2021/10/contact-us-banner_bg-scaled.jpg)] h-max bg-no-repeat bg-cover">
-        <div className="w-[1200px] mx-auto flex  gap-5 py-10 items-start">
+        <div className="d:flex-row p:flex-col p:w-auto d:w-[1200px] mx-auto flex  gap-5 py-10 items-start">
           <div className=" flex-[60%] g bg-[rgba(255,255,255,0.46)] rounded-3xl h-full">
             <div className="p-5 grid grid-cols-2 gap-5 h-full">
               <div className=" bg-purple-900 text-white font-bold text-[30px] py-2 rounded-2xl col-span-2">
@@ -108,7 +108,9 @@ const Contact = () => {
                     className="w-full"
                   />
                 </div>
-                <h3 className="text-[24px] font-semibold">HỖ TRỢ BÁN HÀNG</h3>
+                <h3 className="text-[24px] font-semibold text-center">
+                  HỖ TRỢ BÁN HÀNG
+                </h3>
                 <div className="flex ">
                   <div className="py-3 bg-purple-950 text-white font-semibold px-6 rounded-full uppercase">
                     Liên hệ
@@ -124,7 +126,9 @@ const Contact = () => {
                     className="w-full"
                   />
                 </div>
-                <h3 className="text-[24px] font-semibold">HỖ TRỢ KỸ THUẬT</h3>
+                <h3 className="text-[24px] font-semibold text-center">
+                  HỖ TRỢ KỸ THUẬT
+                </h3>
                 <div className="flex ">
                   <div className="py-3 bg-purple-950 text-white font-semibold px-6 rounded-full uppercase">
                     Liên hệ
@@ -147,7 +151,9 @@ const Contact = () => {
                     className="w-full"
                   />
                 </div>
-                <h3 className="text-[24px] font-semibold">CALL US NOW</h3>
+                <h3 className="text-[24px] font-semibold">
+                  GỌI CHO CHÚNG TÔI NGAY
+                </h3>
                 <div className="flex ">
                   <div className="py-3 bg-purple-950 text-white font-semibold px-6 rounded-full ">
                     +65 6564 4704
@@ -168,7 +174,7 @@ const Contact = () => {
       </div>
 
       <div className="bg-[url(https://samsungdigitallife.com/wp-content/uploads/2018/02/contactusbackground-1.jpg)] bg-no-repeat bg-cover h-max bg-center py-10 ">
-        <div className="grid grid-cols-2 w-[1200px] mx-auto py-10">
+        <div className="grid p:grid-cols-1 d:grid-cols-2 p:w-auto d:w-[1200px] mx-auto py-10">
           <div className="bg-[url(https://samsungdigitallife.com/wp-content/uploads/2018/02/contactusbg2.jpg)] flex flex-col items-center p-10 gap-10 ">
             <div>
               <img
@@ -179,33 +185,30 @@ const Contact = () => {
             <div className="text-[26px] font-bold text-center text-white">
               <h3>HANMAN INTERNATIONAL PTE LTD SINGAPORE</h3>
             </div>
-            <div className="flex flex-col gap-5 text-[22px] text-white">
+            <div className="flex flex-col gap-5 text-[22px] text-white ">
               <div className="flex items-center gap-5 ">
                 <div className="bg-slate-300 text-mainbluerounded-full text-[50px] p-2 rounded-full text-mainblue">
                   <CiLocationOn />
                 </div>
-                <p>
-                  2 Jurong East Street 21, IMM Building, #03-157, Singapore
-                  609601
-                </p>
+                <p>{ContactData.address}</p>
               </div>
               <div className="flex items-center gap-5 ">
                 <div className="bg-slate-300 text-mainbluerounded-full text-[50px] p-2 rounded-full text-mainblue">
                   <AiTwotonePhone />
                 </div>
-                <p>+65-6564 4704</p>
+                <p>{ContactData.phone}</p>
               </div>
-              <div className="flex items-center gap-5 ">
+              {/* <div className="flex items-center gap-5 ">
                 <div className="bg-slate-300 text-mainbluerounded-full text-[50px] p-2 rounded-full text-mainblue">
                   <FaFax className="p-2" />
                 </div>
                 <p>+65-6258 3080</p>
-              </div>
+              </div> */}
               <div className="flex items-center gap-5 ">
                 <div className="bg-slate-300 text-mainbluerounded-full text-[50px] p-2 rounded-full text-mainblue">
                   <AiOutlineMail className="p-2" />
                 </div>
-                <p>SamsungSG@hanman.net</p>
+                <p>{ContactData.gmail}</p>
               </div>
             </div>
           </div>
@@ -263,7 +266,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="w-[1200px] flex mx-auto gap-10 items-center py-10 justify-center">
+      <div className="p:w-auto d:w-[1200px] flex mx-auto gap-10 items-center py-10 justify-center">
         <div className="mx-16">
           <img
             src="https://samsungdigitallife.com/wp-content/uploads/2018/02/businesshours.png"
@@ -272,17 +275,15 @@ const Contact = () => {
         </div>
         <div className="text-[24px] flex flex-col gap-5">
           <h2>Giờ làm việc của chúng tôi:</h2>
-          <h2 className="font-semibold">
-            Monday to Saturday (9.00am to 6.00pm)
-          </h2>
-          <p className="italic text-[18px] text-gray-600">
+          <h2 className="font-semibold">{ContactData.worktime}</h2>
+          {/* <p className="italic text-[18px] text-gray-600">
             (Closed on Sunday and Public Holiday)
-          </p>
+          </p> */}
         </div>
       </div>
 
       <div className="bg-[#ffd5d7] ">
-        <div className="w-[1200px] mx-auto flex py-10">
+        <div className="p:w-auto d:w-[1200px] mx-auto flex py-10 d:flex-row p:flex-col p-2">
           <div className="w-[100%] flex-1">
             <img
               src="https://www.samsungdigitallife.com/wp-content/uploads/2018/02/outofservicefin-600x406.png"
@@ -296,20 +297,20 @@ const Contact = () => {
             </h2>
             <div className="flex flex-col gap-4 text-[22px] font-light">
               <p>
-                We provide technical support for only Singapore and Malaysia
-                customers purchasing SAMSUNG Digital Door Lock from us or our
-                authorized dealers.
+                Chúng tôi chỉ cung cấp hỗ trợ kỹ thuật cho những khách hàng
+                Singapore và Malaysia mua Khóa cửa kỹ thuật số SAMSUNG từ chúng
+                tôi hoặc các đại lý được ủy quyền của chúng tôi.
               </p>
               <p>
-                If you are not our customer and need technical support, please
-                call where you purchased from or your country authorized
-                distributor. Sorry we are not obligated to render any
-                assistance.
+                Nếu bạn không phải là khách hàng của chúng tôi và cần hỗ trợ kỹ
+                thuật, vui lòng gọi đến nơi bạn đã mua hàng hoặc nhà phân phối
+                được ủy quyền tại quốc gia của bạn. Rất tiếc, chúng tôi không có
+                nghĩa vụ phải cung cấp bất kỳ sự trợ giúp nào.
               </p>
             </div>
             <div className="flex mt-10">
               <div className="bg-red-400 py-2 px-6 rounded-full uppercase text-red-800 border-red-800 border font-semibold">
-                Find why?
+                Tìm hiểu tại sao?
               </div>
             </div>
           </div>

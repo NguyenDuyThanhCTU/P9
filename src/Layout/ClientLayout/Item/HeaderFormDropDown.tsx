@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const HeaderFormDropDown: React.FC = () => {
   const { productTypes } = useData();
   return (
-    <div className="w-[1400px] h-max bg-white text-black font-Main shadow-xl shadow-gray-200 ">
+    <div className="w-[1400px] h-max bg-white text-black font-Main shadow-xl shadow-gray-200 z-50">
       <div className="grid grid-cols-4 ">
         {TypeProductItems.map((item: any, idx) => {
           const types = productTypes?.filter(
@@ -36,7 +36,7 @@ const HeaderFormDropDown: React.FC = () => {
               <div className="flex w-full px-6 py-6">
                 <div className="">
                   {types?.map((data: any, idx: number) => (
-                    <Link to={`/${data.typeUrl}`}>
+                    <Link to={`/${item.value}/${data.typeUrl}`}>
                       <div className="flex items-center gap-3 border-b py-1 font-light cursor-pointer hover:text-mainblue">
                         <div className="text-[20px]">
                           <BiSolidCaretRightCircle />

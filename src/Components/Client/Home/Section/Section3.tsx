@@ -10,7 +10,7 @@ const Section3: React.FC = () => {
       title: "SMART OPEN",
 
       content:
-        "Make a quick and safe entry by unlocking your door with your smartphone.",
+        "Thực hiện mở khóa nhanh chóng và an toàn bằng cách mở khóa cửa bằng điện thoại thông minh của bạn.",
       type: "right",
       contentColor: "text-black",
       titleColor: "text-mainblue",
@@ -21,7 +21,7 @@ const Section3: React.FC = () => {
       icon: "https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2Fhomepg_pushmessage.png?alt=media&token=ebb9879a-b144-4aa8-822c-b035296c0d06",
       title: "SMART OPEN",
       content:
-        "Receive push notifications whenever any of your family members return safely",
+        "Nhận thông báo bất cứ khi nào thành viên trong gia đình bạn trở về an toàn",
       type: "left",
       contentColor: "text-black",
       titleColor: "text-[#22aac5]",
@@ -32,7 +32,7 @@ const Section3: React.FC = () => {
       icon: "https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2Fhomepg_keypad_icon2.png?alt=media&token=a3b7bfa1-7c7f-44df-aff1-7b8a483edcac",
       title: "TOUCH PAD",
       content:
-        "Due to the wide touchscreen, the design becomes more stylish and the detection rate gets improved.",
+        "Do màn hình cảm ứng rộng, thiết kế trở nên phong cách hơn và tốc độ nhận diện được cải thiện.",
       type: "right",
       contentColor: "text-white",
       titleColor: "text-[#0cd693]",
@@ -43,7 +43,7 @@ const Section3: React.FC = () => {
       icon: "https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2Fhomepg_inoutrec_icon2.png?alt=media&token=00e0476c-5aa0-4317-923f-eb3cc479f836",
       title: "IN/OUT LOG",
       content:
-        "An access event log that keeps track on who leaves or arrives home",
+        "Nhật ký sự kiện truy cập giúp theo dõi ai rời đi hoặc về đến nhà.",
       type: "left",
       contentColor: "text-black",
       titleColor: "text-[#6142c6]",
@@ -54,7 +54,7 @@ const Section3: React.FC = () => {
       icon: "https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2Fsecurityicon_home.png?alt=media&token=c0d91a39-0b28-48dc-967a-3ca6a62a0922",
       title: "Always Keeping Your Home Secured",
       content:
-        "With our autolocking feature, you can rest assured that your home and loved ones are always safe.",
+        "Với tính năng tự động khóa của chúng tôi, bạn có thể yên tâm rằng ngôi nhà và những người thân yêu của bạn luôn được an toàn.",
       type: "right",
       contentColor: "text-black",
       titleColor: "text-[#0cd693]",
@@ -65,7 +65,7 @@ const Section3: React.FC = () => {
       icon: "https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2Fhomepg_Sillentmode_icon.png?alt=media&token=4b6e4f20-663f-46c9-bcd7-196156319f5b",
       title: "Silent Mode",
       content:
-        "During the wee hours coming home? Save your loved ones some sleep and make a quiet entry using Silent Mode.",
+        "Bạn thường xuyên về nhà lúc nữa đêm? Hãy giúp những người thân yêu của bạn ngủ ngon khi mở cửa một cánh yên tĩnh bằng Chế độ im lặng.",
       type: "left",
       contentColor: "text-black",
       titleColor: "text-[#6142c6]",

@@ -105,9 +105,9 @@ const Section4 = () => {
   ];
   return (
     <>
-      <div className="h-[190px] bg-[url(https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2Fproductpgbg.jpg?alt=media&token=d0f84f7d-205b-44b4-a7bc-c27e05de6ac8)] bg-center bg-cover bg-no-repeat flex justify-center items-center">
+      <div className="p:h-max d:h-[190px] bg-[url(https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2Fproductpgbg.jpg?alt=media&token=d0f84f7d-205b-44b4-a7bc-c27e05de6ac8)] bg-center bg-cover bg-no-repeat flex justify-center items-center">
         <h1 className="text-[52px] font-bold text-center text-white">
-          Why Samsung Digital Door Lock?
+          Tại sao nên chọn Khóa Cửa Kỹ Thuật Số Samsung?
         </h1>
       </div>
       <div className="py-5">

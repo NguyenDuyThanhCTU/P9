@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
 
   return (
     <div className="bg-[#2b2e32]">
-      <div className="w-[1300px] mx-auto py-10 grid p:grid-cols-1 d:grid-cols-4  text-white font-Main  p-2 gap-5">
+      <div className="p:w-auto d:w-[1300px] mx-auto py-10 grid p:grid-cols-1 d:grid-cols-4  text-white font-Main  p-2 gap-5  text-center">
         <div></div>
         <div>
           <h1 className="text-[20px] font-bold mb-4 uppercase">Hỗ trợ</h1>

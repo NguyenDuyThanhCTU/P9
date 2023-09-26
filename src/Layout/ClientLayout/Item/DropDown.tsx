@@ -48,18 +48,18 @@ const DropDown = ({ content, link, setHidden, idx, dropdown }: any) => {
               {" "}
               <div className="flex items-center justify-between">
                 <div
-                  className="p-4 font-light text-black group duration-300 hover:text-white hover:bg-mainpink flex justify-between items-center w-full"
+                  className="p-4 font-light text-black group duration-300 hover:text-mainblue hover:bg-mainpink flex justify-between items-center w-full"
                   onClick={() => {
                     HandleOpenSubMenu(idx + 1);
                   }}
                 >
-                  <Link to={`/loai-san-pham/${items.params}`}>
+                  <Link to={`/khoa-cua-dien-tu/${items.typeUrl}`}>
                     <h3
                       onClick={() => {
                         setHidden(false);
                       }}
                     >
-                      {items.name}
+                      {items.type}
                     </h3>
                   </Link>
                 </div>
