@@ -156,7 +156,7 @@ const Contact = () => {
                 </h3>
                 <div className="flex ">
                   <div className="py-3 bg-purple-950 text-white font-semibold px-6 rounded-full ">
-                    +65 6564 4704
+                    {ContactData.phone}
                   </div>
                 </div>
               </div>

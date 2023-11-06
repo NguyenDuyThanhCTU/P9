@@ -1,6 +1,9 @@
 import React from "react";
+import { useData } from "../../../Context/DataProviders";
+import { Link } from "react-router-dom";
 
 const Promotion = () => {
+  const { Posts } = useData();
   return (
     <div className="">
       <div className="bg-[url(https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2Froadshowbg3.jpg?alt=media&token=e5c2479b-7ed6-466d-a96d-174e3cb770cf)] bg-no-repeat bg-cover">
@@ -11,14 +14,13 @@ const Promotion = () => {
             </h1>
           </div>
           <div className="flex flex-col gap-2 w-full p-8">
-            <img
-              src="https://www.samsungdigitallife.com/wp-content/uploads/2021/05/SAMSUNG-SMART-WIFI-DDL-BROCHURE_MAY_2021.jpg"
-              alt=""
-            />
-            <img
-              src="https://www.samsungdigitallife.com/wp-content/uploads/2021/05/SAMSUNG-SMART-WIFI-DDL-BROCHURE_MAY_20212.jpg"
-              alt=""
-            />
+            {Posts.map((items: any, idx: number) => (
+              <Link to={`/khuyen-mai/${items.url}`}>
+                <div className="h-max">
+                  <img src={items.image} alt="promotion" />
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </div>

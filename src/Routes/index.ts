@@ -9,6 +9,7 @@ import SecurityCameras from "../Components/Client/Products/SecurityCameras/Secur
 import SmartHome from "../Components/Client/Products/SmartHome/SmartHome";
 import Project from "../Components/Client/Project/Project";
 import Promotion from "../Components/Client/Promotion/Promotion";
+import PromotionDetail from "../Components/Client/Promotion/PromotionDetail";
 import Support from "../Components/Client/Support/Support";
 
 import PostDetail from "../Components/Item/PostDetail";
@@ -35,6 +36,11 @@ export const AllRoutes = [
   {
     path: "/khuyen-mai",
     component: Promotion,
+    Layout: ClientLayout,
+  },
+  {
+    path: "/khuyen-mai/:id",
+    component: PromotionDetail,
     Layout: ClientLayout,
   },
   {

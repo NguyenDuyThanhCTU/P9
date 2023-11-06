@@ -99,23 +99,7 @@ const UploadPost: React.FC = () => {
               Input={true}
               PlaceHolder=""
             />
-            <div className="flex flex-col gap-2 mb-2">
-              <label className="text-md font-medium ">Loại bài viết:</label>
-              <select
-                className="outline-none lg:w-650 border-2 border-gray-200 text-md capitalize lg:p-4 p-2 rounded cursor-pointer"
-                onChange={(e) => setType(e.target.value)}
-              >
-                {TypePostItems.map((item, idx) => (
-                  <option
-                    key={idx}
-                    className=" outline-none capitalize bg-white text-gray-700 text-md p-2 hover:bg-slate-300"
-                    value={item.value}
-                  >
-                    {item.label}
-                  </option>
-                ))}
-              </select>
-            </div>
+
             {type !== "policy" && (
               <>
                 {" "}

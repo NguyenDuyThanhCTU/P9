@@ -42,12 +42,6 @@ const Content: React.FC = () => {
         ) : isSelected === 4 ? (
           <>
             <div className="p-5 d:px-10 p:px-2 flex justify-start gap-10">
-              <Video />
-            </div>
-          </>
-        ) : isSelected === 5 ? (
-          <>
-            <div className="p-5 d:px-10 p:px-2 flex justify-start gap-10">
               <Account />
             </div>
           </>
@@ -65,21 +59,6 @@ const Content: React.FC = () => {
             </div>
           </>
         ) : isSelected === 8 ? (
-          <>
-            <div className="p-5 d:px-10 p:px-2 flex justify-start gap-10">
-              <>
-                <Sale />
-              </>
-            </div>
-          </>
-        ) : isSelected === 9 ? (
-          <>
-            <div className="p-5 d:px-10 p:px-2 flex justify-start gap-10">
-              <Order />
-              <></>
-            </div>
-          </>
-        ) : isSelected === 10 ? (
           <>
             <div className="p-5 d:px-10 p:px-2 flex justify-start gap-10">
               <Branch />

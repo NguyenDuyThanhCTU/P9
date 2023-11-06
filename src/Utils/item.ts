@@ -86,14 +86,7 @@ export const ProductSidebarAdmin = [
     name: "Sản phẩm",
     icon: "FaFirstOrderAlt",
   },
-  {
-    name: "Sale",
-    icon: "IoFlashOutline",
-  },
-  {
-    name: "Đơn hàng",
-    icon: "AiOutlineUnorderedList",
-  },
+
   {
     name: "Chi nhánh",
     icon: "CgListTree",
@@ -117,10 +110,7 @@ export const WebsiteSidebarAdmin = [
     name: "Bài viết",
     icon: "MdOutlinePostAdd",
   },
-  {
-    name: "Video",
-    icon: "BiSlideshow",
-  },
+
   {
     name: "Tài khoản",
     icon: "MdManageAccounts",

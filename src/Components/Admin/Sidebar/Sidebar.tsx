@@ -107,11 +107,11 @@ const Sidebar: React.FC = () => {
             : isSelected === 5
             ? "translate-y-[392px]"
             : isSelected === 6
-            ? "translate-y-[549px]"
+            ? "translate-y-[472px]"
             : isSelected === 7
-            ? "translate-y-[619px]"
+            ? "translate-y-[549px]"
             : isSelected === 8
-            ? "translate-y-[689px]"
+            ? "translate-y-[619px]"
             : isSelected === 9
             ? "translate-y-[759px]"
             : isSelected === 10
