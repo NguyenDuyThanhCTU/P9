@@ -183,7 +183,7 @@ const Contact = () => {
               />
             </div>
             <div className="text-[26px] font-bold text-center text-white">
-              <h3>HANMAN INTERNATIONAL PTE LTD SINGAPORE</h3>
+              <h3>GOTTER</h3>
             </div>
             <div className="flex flex-col gap-5 text-[22px] text-white ">
               <div className="flex items-center gap-5 ">

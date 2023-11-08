@@ -14,7 +14,7 @@ const Section: React.FC = () => {
         <div className="flex flex-col justify-center items-center p:w-auto d:w-[1000px] mx-auto">
           <div>
             <img
-              src="https://www.samsungdigitallife.com/wp-content/uploads/2020/10/Samsung-Logo_2020-400x140.png"
+              src="https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/z4857624576504_ac9ec48714b2f15e4334de232c67f16f-removebg-preview.png?alt=media&token=b5151c7b-e800-4bb9-950e-df5f83ba0226"
               alt="samsung logo"
             />
           </div>

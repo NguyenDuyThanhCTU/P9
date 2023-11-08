@@ -1,4 +1,4 @@
-import { SiZalo } from "react-icons/si";
+import { SiShopee, SiZalo } from "react-icons/si";
 import {
   BsFacebook,
   BsMessenger,
@@ -75,6 +75,7 @@ export const IconMapping: IconMappingType = {
   TbCubeSend: TbCubeSend,
   BsFillSendXFill: BsFillSendXFill,
   CiViewList: CiViewList,
+  SiShopee: SiShopee,
 };
 
 export const ProductSidebarAdmin = [
@@ -140,10 +141,10 @@ export const SocialMediaDashboard = [
     style: "hover:bg-white hover:text-black p-1",
   },
   {
-    title: "Trang Messenger",
-    icon: "BsMessenger",
+    title: "Trang Shopee",
+    icon: "SiShopee",
     image:
-      "https://img.freepik.com/premium-photo/3d-facebook-messenger-logo-application-blue-background-social-media-communication_73903-695.jpg",
+      "https://deo.shopeemobile.com/shopee/shopee-mobilemall-live-sg/homepagefe/26c9324913c021677768c36975d635ef.png",
     style: "hover:bg-white hover:text-blue-600 p-1",
   },
   {
@@ -161,10 +162,10 @@ export const SocialMediaDashboard = [
   },
 
   {
-    title: "Trang Twitter",
+    title: "Trang Lazada",
     icon: "AiOutlineTwitter",
     image:
-      "https://vietnix.vn/wp-content/uploads/2022/07/mang-xa-hoi-twitter.webp",
+      "https://cl-wpml.s3.ap-southeast-1.amazonaws.com/cam-nang-viec-lam/wp-content/uploads/2023/06/07090433/lazada.jpg",
     style: "hover:bg-white hover:text-blue-600 p-1",
   },
   {

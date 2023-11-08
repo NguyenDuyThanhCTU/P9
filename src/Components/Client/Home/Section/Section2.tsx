@@ -47,11 +47,9 @@ const Section2 = () => {
                 Khóa Cửa Kỹ Thuật Số & Sản Phẩm Bảo Mật Thông Minh Gotter
               </h1>
               <h2 className="text-[18px] text-white mt-5">
-                Là Đại lý Ủy quyền của Gotter Digital Door Lock & Sản phẩm Bảo
-                mật Thông minh tại Singapore và Malaysia <br /> Chúng tôi đang
-                đi đầu cho một lối sống an toàn và tiện lợi , Gotter tự hào là
-                một nhà lãnh đạo thị trường trong ngành Khóa cửa số và <br />{" "}
-                Cam kết giải quyết mọi nhu cầu bảo mật của bạn.
+                Chúng tôi đang đi đầu cho một lối sống an toàn và tiện lợi ,
+                Gotter tự hào là một nhà lãnh đạo thị trường trong ngành Khóa
+                cửa số và <br /> Cam kết giải quyết mọi nhu cầu bảo mật của bạn.
               </h2>
             </div>
             <div className="flex text-white">

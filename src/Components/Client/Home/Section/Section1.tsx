@@ -57,12 +57,15 @@ const Section1 = () => {
 
           <div className="text-white font-thin text-[50px]">
             <h1 className="text-center uppercase ">
-              THEO DÕI TRANG Instagram CỦA CHÚNG TÔI ĐỂ NHẬN <br />
+              THEO DÕI TRANG Facebook CỦA CHÚNG TÔI ĐỂ NHẬN <br />
               CẬP NHẬT SẢN PHẨM MỚI NHẤT
             </h1>
           </div>
           <div className="flex mt-14 justify-center">
-            <div className="bg-gradient-to-b  from-[#683aa5]   to-[#ed536a] hover:from-[#340470] hover:to-[#b23a62] rounded-full text-white  border-2 border-white text-[18px] font-bold uppercase flex items-center py-3 px-10  cursor-pointer">
+            <div
+              className="bg-gradient-to-b  from-[#683aa5]   to-[#ed536a] hover:from-[#340470] hover:to-[#b23a62] rounded-full text-white  border-2 border-white text-[18px] font-bold uppercase flex items-center py-3 px-10  cursor-pointer"
+              onClick={() => window.open(`https://${SocialMedia[1]}`, "_blank")}
+            >
               <span>Đăng ký ngay</span>
             </div>
           </div>

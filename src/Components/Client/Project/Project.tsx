@@ -13,15 +13,12 @@ const Project: React.FC = () => {
       </div>
       <div className="flex flex-col gap-5 p:w-auto p-2 d:w-[1200px] mx-auto py-10 text-[20px]  font-normal text-gray-600">
         <p>
-          <strong className="text-mainblue">
-            Hanman International Pte Ltd
-          </strong>{" "}
-          đã hoàn thành thành công hàng trăm dự án nhà ở tại Singapore, Malaysia
-          và Đông Nam Á trong việc cung cấp và lắp đặt khóa cửa thông minh. Đối
-          với nhiều người trong số họ, khóa cửa kỹ thuật số của chúng tôi được
-          tích hợp với nhiều hệ thống nhà thông minh khác nhau. Chúng tôi cũng
-          là đối tác chính thức của Singtel cho các dịch vụ IOT nhà thông minh
-          của Singtel.
+          <strong className="text-mainblue">Gotter</strong> đã hoàn thành thành
+          công hàng trăm dự án nhà ở tại Singapore, Malaysia và Đông Nam Á trong
+          việc cung cấp và lắp đặt khóa cửa thông minh. Đối với nhiều người
+          trong số họ, khóa cửa kỹ thuật số của chúng tôi được tích hợp với
+          nhiều hệ thống nhà thông minh khác nhau. Chúng tôi cũng là đối tác
+          chính thức của Singtel cho các dịch vụ IOT nhà thông minh của Singtel.
         </p>
         <p>
           Để biết thêm thông tin hoặc yêu cầu về dự án, vui lòng đặt lịch hẹn để
