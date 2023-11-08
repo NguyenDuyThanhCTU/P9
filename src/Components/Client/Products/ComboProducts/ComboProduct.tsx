@@ -31,7 +31,7 @@ const ComboProduct: React.FC = () => {
       );
     }
   }, [id, Products]);
-  console.log(Type);
+
   return (
     <div>
       <div>

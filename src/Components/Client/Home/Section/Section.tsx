@@ -8,7 +8,6 @@ import { useData } from "../../../../Context/DataProviders";
 
 const Section = () => {
   const { Slides, Introduction } = useData();
-  console.log(Introduction);
   return (
     <>
       <div className="h-max">
@@ -38,7 +37,7 @@ const Section = () => {
         <div className="flex gap-2 py-5 px-5 d:flex-row p:flex-col d:w-[1300px] p:w-auto mx-auto">
           <div className=" flex-[45%]">
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2FT%E1%BB%9D%20r%C6%A1i-m%E1%BA%B7t%20ngo%C3%A0i.jpg?alt=media&token=0a8e2b71-6a7d-461c-a4f6-a633586cb16f"
+              src="https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2Fz4856218610913_6727bf106aac6b5d1cce603d69485eac.jpg?alt=media&token=220bf6d7-6fa2-49ee-9b1d-39f20ed706d1"
               alt="banner"
               className="w-full h-full"
             />

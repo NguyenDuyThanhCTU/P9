@@ -20,7 +20,7 @@ const Section: React.FC = () => {
           </div>
           <div className="flex flex-col gap-10 items-center ">
             <h1 className="text-[42px] font-bold text-purple-500">
-              Samsung Digital Door Lock
+              GOTTER Digital Door Lock
             </h1>
             <p className="text-[24px] font-light">
               Khóa bảo mật kỹ thuật số của chúng tôi (Mortise, Deadbolt, RIM)
@@ -33,8 +33,7 @@ const Section: React.FC = () => {
               mối quan tâm của bạn; và đặc sản của chúng tôi.
             </p>
             <p className="w-[400px] text-[30px] font-bold italic text-[#9e684b]">
-              “Một cuộc sống an toàn và tiện lợi nhờ Khóa Cửa Thông Minh
-              Samsung”
+              “Một cuộc sống an toàn và tiện lợi nhờ Khóa Cửa Thông Minh Gotter
             </p>
           </div>
         </div>

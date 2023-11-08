@@ -26,8 +26,9 @@ const ClientLayout = ({ children }: any) => {
     <HelmetProvider>
       <Helmet>
         <title>{TradeMarkData.websiteName}</title>
-        <link rel="icon" href={TradeMarkData.websiteIco} />
-        <link rel="manifest" href={TradeMarkData.websiteIco} />
+        <link rel="icon" href={TradeMarkData.websiteLogo} />
+        <link rel="manifest" href={TradeMarkData.websiteLogo} />
+        <meta name="description" content={TradeMarkData.websiteSlogan} />
       </Helmet>
 
       <div className="relative z-50">

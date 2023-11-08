@@ -6,7 +6,7 @@ import { useData } from "../../../../Context/DataProviders";
 
 const DigitalDoor: React.FC = () => {
   const { Products, productTypes } = useData();
-  console.log(productTypes);
+
   return (
     <>
       {/* Introduce section */}
@@ -19,7 +19,6 @@ const DigitalDoor: React.FC = () => {
         .filter((item: any) => item.parentUrl === "khoa-cua-dien-tu")
         .map((items: any) => (
           <>
-            {console.log(items)}
             <ProductDisplay id={items.typeUrl} />
           </>
         ))}

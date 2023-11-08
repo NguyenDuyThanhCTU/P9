@@ -10,7 +10,7 @@ const Section2 = () => {
         <div className="w-[90%] flex justify-end  mx-auto items-center h-max py-5 ">
           <div>
             <h1 className="text-[35px] font-light text-center ">
-              Bây giờ bạn có thể Mua Khóa cửa kỹ thuật số Samsung thông qua{" "}
+              Bây giờ bạn có thể Mua Khóa cửa kỹ thuật số Gotter thông qua{" "}
               <br /> Cửa hàng trực tuyến của chúng tôi{" "}
             </h1>
             <div className="grid p:grid-cols-2 d:grid-cols-3 gap-10 mt-10">
@@ -23,7 +23,7 @@ const Section2 = () => {
           </div>
         </div>
       </div>
-      <div className=" p:h-max d:h-[120vh] bg-[url(https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2FHome-Page-Comex-2018-promotion-1-e1537869132409.jpg?alt=media&token=34b20143-c027-4a34-b89d-6e2e4fd993e0)] bg-cover bg-center">
+      {/* <div className=" p:h-max d:h-[120vh] bg-[url(https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2FHome-Page-Comex-2018-promotion-1-e1537869132409.jpg?alt=media&token=34b20143-c027-4a34-b89d-6e2e4fd993e0)] bg-cover bg-center">
         <h1 className=" w-full text-center p:text-[23px] d:text-[35px] font-bold text-white  my-14">
           Giới thiệu khóa cửa kỹ thuật số WiFi PUSH PULL mới của chúng tôi.{" "}
           <br />
@@ -31,23 +31,23 @@ const Section2 = () => {
           cửa mới, <br />
           nhà thông minh và camera an ninh
         </h1>
-      </div>
+      </div> */}
       <div className="h-max">
         <div className="bg-[url(https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2Fbackground_blue_home.jpg?alt=media&token=4bf0211e-8cf6-44f3-8480-90266d248ff3)]">
           <div className="py-10 p:w-auto d:w-[1200px] mx-auto flex flex-col items-center gap-10">
             <div className="w-[410px] ">
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2FSamsung-Logo_2020_white.png?alt=media&token=e62c324a-de04-4a5c-9b00-ebd7ac65514c"
-                alt="samsung logo"
+                src="https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/z4857624576504_ac9ec48714b2f15e4334de232c67f16f-removebg-preview.png?alt=media&token=b5151c7b-e800-4bb9-950e-df5f83ba0226"
+                alt="Gotter logo"
                 className="w-full"
               />
             </div>
             <div className="text-center">
               <h1 className="text-[#00d8ff] text-[35px] font-bold ">
-                Khóa Cửa Kỹ Thuật Số & Sản Phẩm Bảo Mật Thông Minh Samsungs
+                Khóa Cửa Kỹ Thuật Số & Sản Phẩm Bảo Mật Thông Minh Gotter
               </h1>
               <h2 className="text-[18px] text-white mt-5">
-                Là Đại lý Ủy quyền của Samsung Digital Door Lock & Sản phẩm Bảo
+                Là Đại lý Ủy quyền của Gotter Digital Door Lock & Sản phẩm Bảo
                 mật Thông minh tại Singapore và Malaysia <br /> Chúng tôi đang
                 đi đầu cho một lối sống an toàn và tiện lợi , Gotter tự hào là
                 một nhà lãnh đạo thị trường trong ngành Khóa cửa số và <br />{" "}

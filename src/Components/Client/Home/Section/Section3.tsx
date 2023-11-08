@@ -5,7 +5,7 @@ const Section3: React.FC = () => {
   const ItroduceItems = [
     {
       background:
-        "https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2Fhomepage-unlockimage-shp-dp727.jpg?alt=media&token=18108495-6975-4b57-bdca-e6a2d0d5187a",
+        "https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2Fz4856223456752_b15c916e0b2cbaa3ca55489bb64cc135.jpg?alt=media&token=a5e8e7ee-a1ba-4755-aa79-6dd442b00e31",
       icon: "https://firebasestorage.googleapis.com/v0/b/gotter-f5252.appspot.com/o/UI%2Fhomepg_blutooth.png?alt=media&token=baa0eaa0-7268-4ef8-a55c-c2aed90c564c",
       title: "SMART OPEN",
 

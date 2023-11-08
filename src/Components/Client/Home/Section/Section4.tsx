@@ -94,9 +94,9 @@ const Section4 = () => {
             "https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2Flowbatterywarning-signal.jpg?alt=media&token=ca4f1a48-c31d-4b6a-9594-a1c060e93ec3",
         },
         {
-          title: "Interface with Samsung Connect",
+          title: "Interface with Gotter Connect",
           content:
-            "Khóa tương tác với điện thoại Samsung hoặc hệ thống tự động dễ dàng mở khóa cửa",
+            "Khóa tương tác với điện thoại Gotter hoặc hệ thống tự động dễ dàng mở khóa cửa",
           image:
             "https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2FInterface-with-samsung-smart-connect.jpg?alt=media&token=f22f3a97-4bfb-4d2a-b4dc-57544c6de33d",
         },
@@ -107,7 +107,7 @@ const Section4 = () => {
     <>
       <div className="p:h-max d:h-[190px] bg-[url(https://firebasestorage.googleapis.com/v0/b/dora-a85b2.appspot.com/o/UI%2Fproductpgbg.jpg?alt=media&token=d0f84f7d-205b-44b4-a7bc-c27e05de6ac8)] bg-center bg-cover bg-no-repeat flex justify-center items-center">
         <h1 className="text-[52px] font-bold text-center text-white">
-          Tại sao nên chọn Khóa Cửa Kỹ Thuật Số Samsung?
+          Tại sao nên chọn Khóa Cửa Kỹ Thuật Số Gotter?
         </h1>
       </div>
       <div className="py-5">

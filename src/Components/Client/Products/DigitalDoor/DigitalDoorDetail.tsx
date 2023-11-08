@@ -34,7 +34,7 @@ const DigitalDoorDetail: React.FC = () => {
           </div>
           <div>
             <h2 className="uppercase text-mainblue text-[34px] font-bold">
-              SAMSUNG DIGITAL <br /> DOOR LOCK
+              GOTTER DIGITAL <br /> DOOR LOCK
             </h2>
             <h3 className="font-bold text-[28px] ">({type.type})</h3>
           </div>
